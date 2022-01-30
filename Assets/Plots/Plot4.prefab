@@ -1132,6 +1132,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5297850506431521168}
     m_Modifications:
+    - target: {fileID: 391158605819876255, guid: a4f59ea801d80234884fdf86b1e13107, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7364547977494746249, guid: a4f59ea801d80234884fdf86b1e13107, type: 3}
       propertyPath: m_Name
       value: Bed Double
