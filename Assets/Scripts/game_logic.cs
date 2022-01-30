@@ -23,11 +23,11 @@ public class game_logic : MonoBehaviour {
                 if (x % 9 == 0 && y % 9 == 0){
                     Instantiate(pillar, new Vector3((x - 25f) * 8.0f, 0, (y - 25f) * 8.0f), Quaternion.identity);
                 } else {
-                    Instantiate(plot[Random.Range(0, plot.Length)], new Vector3((x - 25f) * 8.0f, 0, (y - 25f) * 8.0f), Quaternion.identity);
+                    Instantiate(plot[Random.Range(0, plot.Length)], new Vector3((x - 25f) * 8.0f, 0, (y - 25f) * 8.0f), Quaternion.Euler(0, 90*Random.Range(0, 3), 0));
                 }
 
-                if (x % 4 == 0 && y % 4 == 0) {
-                    Instantiate(advert[Random.Range(0, advert.Length)], new Vector3((x - 25f) * 8.0f, 10, (y - 25f) * 8.0f), Quaternion.identity);
+                if (x % 3 == 0 && y % 3 == 0) {
+                    Instantiate(advert[Random.Range(0, advert.Length)], new Vector3((x - 25f) * 8.0f, 10, (y - 25f) * 8.0f), Quaternion.Euler(0, 90*Random.Range(0, 2), 0));
                 }
             }
         }

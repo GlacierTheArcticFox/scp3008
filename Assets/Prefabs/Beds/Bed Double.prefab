@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 391158605819876255}
   m_Layer: 3
   m_Name: Bed Double
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,6 +95,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1137042714952761246, guid: 252dc0e1dd4ed4445864ea29c190bcd6, type: 3}
