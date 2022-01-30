@@ -26,7 +26,11 @@ public class player_logic : MonoBehaviour {
                     }
                 }
             } else {
-                hit.collider.gameObject.transform.parent.position = point.transform.position;
+                if(hit.collider.tag == "Parent"){
+                    hit.collider.gameObject.transform.parent.position = point.transform.position;
+                } else {
+                    hit.collider.gameObject.transform.position = point.transform.position;
+                }
             }
             
         } else {

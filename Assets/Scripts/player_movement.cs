@@ -35,7 +35,7 @@ public class player_movement : MonoBehaviour {
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        if (x != 0 || z != 0 && isGrounded) {
+        if ((x != 0 || z != 0) && isGrounded) {
             if (!walkingSound.isPlaying) {
                 walkingSound.pitch = Random.Range(0.6f, 0.7f);
                 walkingSound.PlayDelayed(0.30f);

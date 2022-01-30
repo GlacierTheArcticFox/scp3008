@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 975473879}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.3706585, g: 0.3890168, b: 0.439396, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -222,13 +222,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plot:
-  - {fileID: 4345981322169133147, guid: 4b56fbc91d0650b4aa40c58daf32e17f, type: 3}
-  - {fileID: 5485834497126052799, guid: c6458ab80c9df2945872c7a2f884d27e, type: 3}
-  - {fileID: 6963400699319951857, guid: 7b8b381a27a49d444abc28555a102a9d, type: 3}
-  - {fileID: 4540202319951209351, guid: 9193d63613bac654ba0b45c786bd7040, type: 3}
-  - {fileID: 3210331248903778273, guid: d49d055019277f14da40c3e7f7687fb1, type: 3}
-  - {fileID: 8566514393008930070, guid: 37238e9487ff59f40add2c237a808d5d, type: 3}
-  - {fileID: 4485811328547039030, guid: 61f61d4c596ba2641ab829c07d5059fd, type: 3}
+  - {fileID: 6219400397766258629, guid: 4cb7831160158ad49ba931c704ca051e, type: 3}
+  - {fileID: 6952693992359723453, guid: 53728fd0aff1b074c974e9d501f5cf26, type: 3}
+  - {fileID: 4718768694036272996, guid: 04c201c8cc0e31c4893790c6ae823138, type: 3}
   pillar: {fileID: 3914533688916948003, guid: 5e0fcdcb2906e7c4594c2759c06a6eb3, type: 3}
 --- !u!1 &386837032
 GameObject:
@@ -276,7 +272,7 @@ GameObject:
   - component: {fileID: 811278244}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Static
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1324,7 +1320,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 603e69188eaad0e4caf1ce083e9c60f3, type: 2}
+  - {fileID: 2100000, guid: 83aa33c10777f3541bde669dc9dcd53e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
