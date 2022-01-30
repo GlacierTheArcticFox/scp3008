@@ -7,6 +7,8 @@ public class game_logic : MonoBehaviour {
     public GameObject[] plot;
     public GameObject pillar;
 
+    public GameObject[] advert;
+
     void Start() {
         GenerateWorld();
     }
@@ -22,6 +24,10 @@ public class game_logic : MonoBehaviour {
                     Instantiate(pillar, new Vector3((x - 25f) * 8.0f, 0, (y - 25f) * 8.0f), Quaternion.identity);
                 } else {
                     Instantiate(plot[Random.Range(0, plot.Length)], new Vector3((x - 25f) * 8.0f, 0, (y - 25f) * 8.0f), Quaternion.identity);
+                }
+
+                if (x % 4 == 0 && y % 4 == 0) {
+                    Instantiate(advert[Random.Range(0, advert.Length)], new Vector3((x - 25f) * 8.0f, 10, (y - 25f) * 8.0f), Quaternion.identity);
                 }
             }
         }

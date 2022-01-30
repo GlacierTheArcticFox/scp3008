@@ -93,9 +93,10 @@ GameObject:
   - component: {fileID: 3076519781729712572}
   - component: {fileID: 902614260057426271}
   - component: {fileID: 1811124040028290208}
+  - component: {fileID: 4823039181948156987}
   m_Layer: 3
   m_Name: Cupboard C
-  m_TagString: Untagged
+  m_TagString: Parent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,6 +165,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4823039181948156987
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990707017038414950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2985861030514312232, guid: 81f89986977084449b4d00d142d3a213, type: 3}
 --- !u!1 &6775575864252230189
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +188,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6146427182249324695}
-  - component: {fileID: 5964674145533548414}
   m_Layer: 3
   m_Name: Cupboard C
   m_TagString: Untagged
@@ -198,20 +212,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &5964674145533548414
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6775575864252230189}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2985861030514312232, guid: 81f89986977084449b4d00d142d3a213, type: 3}
 --- !u!1 &8986777672744098473
 GameObject:
   m_ObjectHideFlags: 0
