@@ -60,9 +60,11 @@ public class player_logic : MonoBehaviour {
                 if(hit.collider.tag == "Parent"){
                     hit.collider.gameObject.transform.parent.position = point.transform.position;
                     hit.collider.gameObject.transform.parent.Rotate(rot);
+                    hit.collider.gameObject.transform.parent.parent = GameObject.Find("Moved Objects").transform;
                 } else {
                     hit.collider.gameObject.transform.position = point.transform.position;
                     hit.collider.gameObject.transform.Rotate(rot);
+                    hit.collider.gameObject.transform.parent = GameObject.Find("Moved Objects").transform;
                 }
 
                 rot = Vector3.zero;

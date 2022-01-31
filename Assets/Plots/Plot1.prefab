@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5425141448300228773}
   m_Layer: 0
   m_Name: Plot1
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
