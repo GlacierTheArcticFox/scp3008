@@ -141,7 +141,6 @@ GameObject:
   - component: {fileID: 7172244074801810911}
   - component: {fileID: 7172244074801810904}
   - component: {fileID: 7172244074801810905}
-  - component: {fileID: 7172244074801810910}
   m_Layer: 0
   m_Name: cable
   m_TagString: Untagged
@@ -212,20 +211,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7172244074801810910
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7172244074801810908}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &7172244074917471945
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +222,6 @@ GameObject:
   - component: {fileID: 7172244074917471944}
   - component: {fileID: 7172244074917471941}
   - component: {fileID: 7172244074917471946}
-  - component: {fileID: 7172244074917471947}
   m_Layer: 0
   m_Name: advert
   m_TagString: Untagged
@@ -308,20 +292,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7172244074917471947
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7172244074917471945}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7172244075133378323
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +303,6 @@ GameObject:
   - component: {fileID: 7172244075133378322}
   - component: {fileID: 7172244075133378319}
   - component: {fileID: 7172244075133378316}
-  - component: {fileID: 7172244075133378317}
   m_Layer: 0
   m_Name: advert
   m_TagString: Untagged
@@ -404,20 +373,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7172244075133378317
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7172244075133378323}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7172244075200325229
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +384,6 @@ GameObject:
   - component: {fileID: 7172244075200325228}
   - component: {fileID: 7172244075200325225}
   - component: {fileID: 7172244075200325230}
-  - component: {fileID: 7172244075200325231}
   m_Layer: 0
   m_Name: cable
   m_TagString: Untagged
@@ -500,17 +454,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7172244075200325231
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7172244075200325229}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
