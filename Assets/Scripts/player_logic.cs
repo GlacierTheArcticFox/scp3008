@@ -6,6 +6,7 @@ public class player_logic : MonoBehaviour {
 
     public GameObject camera;
     public GameObject point;
+    public GameObject worldFloor;
 
     RaycastHit hit;
     bool isHit;
@@ -18,6 +19,8 @@ public class player_logic : MonoBehaviour {
     }
 
     void Update() {
+
+        worldFloor.transform.position = new Vector3(transform.position.x, worldFloor.transform.position.y, transform.position.z);
 
         if ( Input.GetMouseButton(0) ) {
             if (!isHit) {
