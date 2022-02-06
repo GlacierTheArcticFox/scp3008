@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cf1dab834d4ec34195b920ea7bbf9ec, type: 3}
-  m_Name: HDRenderPipelineAsset
+  m_Name: lampshade
   m_EditorClassIdentifier: 
   m_Version: 18
   m_ObsoleteFrameSettings:
@@ -150,10 +150,10 @@ MonoBehaviour:
       isFptlEnabled: 0
   m_RenderPipelineResources: {fileID: 11400000, guid: 3ce144cff5783da45aa5d4fdc2da14b7, type: 2}
   m_RenderPipelineRayTracingResources: {fileID: 0}
-  m_DefaultVolumeProfile: {fileID: 11400000, guid: 81f7e43c867507f488b1e43b6f1ad3dc, type: 2}
+  m_DefaultVolumeProfile: {fileID: 11400000, guid: f940a8037e6cda542891dc1aac1fa4e8, type: 2}
   m_LensAttenuation: 0
   m_UseRenderGraph: 1
-  m_DefaultLookDevProfile: {fileID: 11400000, guid: ec1280bf476531c47a254b1c703b9f33, type: 2}
+  m_DefaultLookDevProfile: {fileID: 0}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
       data1: 72198262773251917
@@ -208,7 +208,7 @@ MonoBehaviour:
       m_SchemaId:
         m_Id: With3Levels
     supportVolumetrics: 1
-    supportLightLayers: 1
+    supportLightLayers: 0
     lightLayerName0: Light Layer default
     lightLayerName1: Light Layer 1
     lightLayerName2: Light Layer 2
@@ -439,9 +439,7 @@ MonoBehaviour:
   availableMaterialQualityLevels: -1
   m_DefaultMaterialQualityLevel: 4
   diffusionProfileSettings: {fileID: 0}
-  diffusionProfileSettingsList:
-  - {fileID: 11400000, guid: f33891b550e63de4aa2007a74a637472, type: 2}
-  - {fileID: 11400000, guid: 00bb7de4b6f176d4b9dd40b413dcbf7e, type: 2}
+  diffusionProfileSettingsList: []
   beforeTransparentCustomPostProcesses: []
   beforeTAACustomPostProcesses: []
   beforePostProcessCustomPostProcesses: []

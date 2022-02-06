@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
 using UnityEngine;
 
 // this is a alot better implementation of world generation ngl
@@ -23,10 +25,7 @@ public class wold_gen : MonoBehaviour {
 
     private List<GameObject> groups = new List<GameObject>();
 
-    
-
-    
-
+    public VolumeProfile profile;
     void Start() {
         //GenGroup(0, 0);
         GenWorld();
@@ -94,9 +93,13 @@ public class wold_gen : MonoBehaviour {
     void LightsOut() {
         musicPlayer.SetActive(false);
         worldLight.SetActive(false);
+        profile.TryGet<HDRISky>(out var sky);
+        profile.TryGet<Fog>(out var fog);
+        sky.exposure.value = -5;
+        //fog.meanFreePath.value = 10;
         RenderSettings.ambientIntensity = 0.1f;
         RenderSettings.reflectionIntensity = 0.1f;
         RenderSettings.fogColor = new Color(0.05f, 0.05f, 0.05f, 0.05f);
-        camera.GetComponent<Camera>().backgroundColor = new Color(0.05f, 0.05f, 0.05f, 0.05f);
+        camera.GetComponent<HDAdditionalCameraData>().backgroundColorHDR = Color.black;
     }
 }
