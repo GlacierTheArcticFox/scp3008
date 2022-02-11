@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3880415761881237903}
   - component: {fileID: 1314759559848590661}
   - component: {fileID: 432173470314422727}
+  - component: {fileID: 3470989441926573534}
   m_Layer: 3
   m_Name: Radiator A
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7795160450605625928, guid: e061815fab1a30645a9feffb7b0dd658, type: 3}
+--- !u!208 &3470989441926573534
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665981522968140944}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.009000001, y: 0.001, z: 0.004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.001}
+  m_TimeToStationary: 0.5

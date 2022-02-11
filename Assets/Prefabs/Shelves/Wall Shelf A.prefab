@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6596107124302091654}
   - component: {fileID: 8966353715089105228}
   - component: {fileID: 8822020644868740094}
+  - component: {fileID: -9061062236618493747}
   m_Layer: 3
   m_Name: Wall Shelf A
   m_TagString: Untagged
@@ -96,3 +97,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2793653054581454113, guid: 8e5a975b3749fe143a696f0ea4a53d38, type: 3}
+--- !u!208 &-9061062236618493747
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7452928803833921689}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.008, y: 0.002, z: 0.002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.001, z: 0}
+  m_TimeToStationary: 0.5

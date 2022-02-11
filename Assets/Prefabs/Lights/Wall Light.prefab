@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2706550406187569066}
   - component: {fileID: 174353994669308768}
   - component: {fileID: 6515421826068144154}
+  - component: {fileID: 7270077610260059269}
   m_Layer: 3
   m_Name: Wall Light
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1718191461671061117, guid: fdf1805c6cfd436438996b783c20a2c4, type: 3}
+--- !u!208 &7270077610260059269
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831718721773673141}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.002, y: 0.001, z: 0.001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

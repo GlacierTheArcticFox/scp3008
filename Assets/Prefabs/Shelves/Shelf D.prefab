@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1669254842731815085}
   - component: {fileID: 3516912352126669927}
   - component: {fileID: 8681665186695672149}
+  - component: {fileID: 26356366464528719}
   m_Layer: 3
   m_Name: Shelf D
   m_TagString: Untagged
@@ -96,3 +97,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6945134186336588642, guid: ae1ede5ac8794304bbf97f33de314231, type: 3}
+--- !u!208 &26356366464528719
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156576209741952434}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.002, z: 0.011000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

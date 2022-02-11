@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 547634541921109684}
   - component: {fileID: 3474048978100554001}
   - component: {fileID: 1716639373718388187}
-  - component: {fileID: 5400576154952029}
+  - component: {fileID: 6038264404765061131}
+  - component: {fileID: -3558667031688714088}
   m_Layer: 3
   m_Name: Kitchen Roll
   m_TagString: Untagged
@@ -83,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5400576154952029
+--- !u!64 &6038264404765061131
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,6 +95,22 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5122134447647737344, guid: 07a1a4d8ac43ff545bc01e19a48f94ee, type: 3}
+--- !u!208 &-3558667031688714088
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923877953115347982}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.001, y: 0.001, z: 0.002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

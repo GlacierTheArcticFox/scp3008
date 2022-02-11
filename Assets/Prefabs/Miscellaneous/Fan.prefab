@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5133330265249758619}
   - component: {fileID: 6978811288892328273}
   - component: {fileID: 8581646771955652055}
+  - component: {fileID: 7954313650969824214}
   m_Layer: 3
   m_Name: Fan
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2766541631056868802, guid: f6190c8164908e642b823d7476e25994, type: 3}
+--- !u!208 &7954313650969824214
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8924247237287372932}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.002, y: 0.002, z: 0.003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.001, z: -0.001}
+  m_TimeToStationary: 0.5

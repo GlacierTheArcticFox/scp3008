@@ -39,23 +39,21 @@ public class player_movement : MonoBehaviour {
             velocity.y = -2f;
         }
 
-        if (Input.GetButton("Sprint")) {
-            speed = sprintSpeed;
-            camera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(camera.GetComponent<Camera>().fieldOfView, 70, 0.1f);;
-        } else {
-            speed = defaultSpeed;
-            camera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(camera.GetComponent<Camera>().fieldOfView, 60, 0.1f);
+        if (Cursor.lockState != CursorLockMode.None){
+            direction.x = Input.GetAxis("Horizontal");
+            direction.y = Input.GetAxis("Vertical");
         }
-
-        direction.x = Input.GetAxis("Horizontal");
-        direction.y = Input.GetAxis("Vertical");
 
         direction = Vector2.ClampMagnitude(direction, 1);
 
         if ((direction != Vector2.zero) && isGrounded) {
             if (!walkingSound.isPlaying) {
-                walkingSound.pitch = Random.Range(0.6f, 0.7f);
-                walkingSound.PlayDelayed(0.1f); //0.30f
+                walkingSound.pitch = Random.Range(0.9f, 1.1f);
+                if (speed == sprintSpeed) {
+                    walkingSound.PlayDelayed(0.1f);
+                } else {
+                    walkingSound.PlayDelayed(0.3f);
+                }
             }
         } else {
             walkingSound.Stop();
@@ -63,9 +61,19 @@ public class player_movement : MonoBehaviour {
 
         Vector3 move = transform.right * direction.x + transform.forward * direction.y;
 
+        if (Input.GetButton("Sprint") && move != Vector3.zero && Cursor.lockState != CursorLockMode.None && GetComponent<player_logic>().stamina > 0f) {
+            speed = sprintSpeed;
+            camera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(camera.GetComponent<Camera>().fieldOfView, 70, 0.1f);
+            GetComponent<player_logic>().stamina -= 10f*Time.deltaTime;
+            GetComponent<player_logic>().energy -= 0.5f*Time.deltaTime;
+        } else {
+            speed = defaultSpeed;
+            camera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(camera.GetComponent<Camera>().fieldOfView, 60, 0.1f);
+        }
+
         controller.Move(move * speed * Time.deltaTime);
         
-        if (Input.GetButtonDown("Jump") && isGrounded) {
+        if (Input.GetButtonDown("Jump") && isGrounded && Cursor.lockState != CursorLockMode.None) {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
         

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8891614103375198677}
   - component: {fileID: 6665798740195462431}
   - component: {fileID: 5422396636254589337}
+  - component: {fileID: -6648727700082563654}
   m_Layer: 3
   m_Name: Mirror B
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8580099409046979582, guid: 97de638341d36a74a9ce5f2d816ba91e, type: 3}
+--- !u!208 &-6648727700082563654
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5152488316179279050}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.003, y: 0.00001, z: 0.004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7442768938517522914}
   - component: {fileID: 4660928348631145768}
   - component: {fileID: 3045428459995141199}
+  - component: {fileID: 2262648212606818599}
   m_Layer: 3
   m_Name: Sink
   m_TagString: Untagged
@@ -98,3 +99,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3671124377080654647, guid: f701bb670142c7744a358d941bd9293a, type: 3}
+--- !u!208 &2262648212606818599
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6606232904783281405}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.002, y: 0.001, z: 0.004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.001, z: -0.003}
+  m_TimeToStationary: 0.5

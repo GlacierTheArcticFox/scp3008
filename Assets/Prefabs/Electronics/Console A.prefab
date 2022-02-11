@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1269803337311514604}
   - component: {fileID: 3925951547415862054}
   - component: {fileID: 3684060046810794912}
+  - component: {fileID: -5744091702367281105}
   m_Layer: 3
   m_Name: Console A
   m_TagString: Untagged
@@ -96,3 +97,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -430626658006381987, guid: 2fe7a581ba10867479dfbf2d822a843b, type: 3}
+--- !u!208 &-5744091702367281105
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277270678682843891}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.001, y: 0.001, z: 0.002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 361870166822549403}
   - component: {fileID: 2513406298365887313}
   - component: {fileID: 7524321240132975265}
+  - component: {fileID: -411846354424783072}
   m_Layer: 3
   m_Name: Rounded Table B
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1613976015910098544, guid: 68f3a37a2bd887e45b7be619ed263b2e, type: 3}
+--- !u!208 &-411846354424783072
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4170779407574344324}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.006, z: 0.004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.001}
+  m_TimeToStationary: 0.5

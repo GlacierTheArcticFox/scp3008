@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1409067265316976680}
   - component: {fileID: 3777100067019263202}
   - component: {fileID: 2570255620291367000}
+  - component: {fileID: -5527053673292550266}
   m_Layer: 3
   m_Name: Hoover
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5128174586724928902, guid: d5f319c90529e704f88c4179774b784e, type: 3}
+--- !u!208 &-5527053673292550266
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3416552130136649015}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.001, y: 0.001, z: 0.00001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

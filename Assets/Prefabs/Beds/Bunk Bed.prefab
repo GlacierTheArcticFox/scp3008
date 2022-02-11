@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4379748016821969456}
   - component: {fileID: 1955418569503528698}
   - component: {fileID: 4202396167903662647}
+  - component: {fileID: -6697315425874062265}
   m_Layer: 3
   m_Name: Bunk Bed
   m_TagString: Untagged
@@ -98,3 +99,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7818495897913936031, guid: f791e44b24c29084794db862675da8a5, type: 3}
+--- !u!208 &-6697315425874062265
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10122808702695215}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.0050000004, y: 0.011000001, z: 0.009000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.001, z: 0.001}
+  m_TimeToStationary: 0.5

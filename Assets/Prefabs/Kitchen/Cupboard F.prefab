@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6607575708425660995}
   - component: {fileID: 6532589126875869031}
   - component: {fileID: 6622932272216327893}
+  - component: {fileID: 2395431192664903013}
   m_Layer: 3
   m_Name: Cupboard F
   m_TagString: Parent
@@ -130,6 +131,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 562843167515836160, guid: 0e03ebaabee76ce468c3b468a2b0bad2, type: 3}
+--- !u!208 &2395431192664903013
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592564206115056156}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.009000001, y: 0.003, z: 0.0050000004}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.002, y: 0.002, z: -0.002}
+  m_TimeToStationary: 0.5
 --- !u!1 &1827813549514700485
 GameObject:
   m_ObjectHideFlags: 0

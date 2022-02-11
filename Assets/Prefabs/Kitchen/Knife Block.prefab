@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 9042890907157626960}
   - component: {fileID: 5391115290638716917}
   - component: {fileID: 7869443875778231103}
-  - component: {fileID: 8859834061036775349}
+  - component: {fileID: 2672611439870979668}
+  - component: {fileID: -1668972087673757540}
   m_Layer: 3
   m_Name: Knife Block
   m_TagString: Untagged
@@ -82,7 +83,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8859834061036775349
+--- !u!64 &2672611439870979668
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,6 +94,22 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7874317607312533407, guid: ccf1361c41925934c8c7b89b130c9d11, type: 3}
+--- !u!208 &-1668972087673757540
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517747199705996010}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.001, y: 0.002, z: 0.002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

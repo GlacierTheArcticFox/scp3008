@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 291193509258309586}
   - component: {fileID: 2589131896007777048}
   - component: {fileID: 3760475022931511186}
+  - component: {fileID: 20658787813773039}
   m_Layer: 3
   m_Name: Radiator B
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1395460474305499864, guid: 4467fce7c0a631d46b71a26f6ff83e05, type: 3}
+--- !u!208 &20658787813773039
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102372226156919501}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.0050000004, y: 0.001, z: 0.004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.001}
+  m_TimeToStationary: 0.5

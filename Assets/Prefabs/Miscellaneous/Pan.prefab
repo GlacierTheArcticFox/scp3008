@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7707820634650135605}
   - component: {fileID: 5553880958675958015}
   - component: {fileID: 6544518538345653369}
+  - component: {fileID: -6298973999713478222}
   m_Layer: 3
   m_Name: Pan
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7921095120403375834, guid: 8d08d44a95b42924093372507a58b7d7, type: 3}
+--- !u!208 &-6298973999713478222
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202482798935152938}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.002, y: 0.001, z: 0.00001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.001, y: 0, z: 0}
+  m_TimeToStationary: 0.5

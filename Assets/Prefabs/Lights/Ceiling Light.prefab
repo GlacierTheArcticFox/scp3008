@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2513116713166634963}
   - component: {fileID: 361577817813814041}
   - component: {fileID: 6029626196542127944}
+  - component: {fileID: -10833939546729706}
   m_Layer: 3
   m_Name: Ceiling Light
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1744318804556716150, guid: d89f5f36c2fbb1b4eb325e3fca3a73cf, type: 3}
+--- !u!208 &-10833939546729706
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2162969634626317004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.003, y: 0.003, z: 0.004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.001}
+  m_TimeToStationary: 0.5

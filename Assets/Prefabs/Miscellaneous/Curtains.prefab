@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8625504380825779024}
   - component: {fileID: 5789102173461860250}
   - component: {fileID: 5158469169133409024}
+  - component: {fileID: -7076560994496395229}
   m_Layer: 3
   m_Name: Curtains
   m_TagString: Untagged
@@ -97,3 +98,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3864154362787459471, guid: 287cd284186891d46aea30b95caac12a, type: 3}
+--- !u!208 &-7076560994496395229
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5429082414675488335}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.007, y: 0.001, z: 0.008}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.003}
+  m_TimeToStationary: 0.5

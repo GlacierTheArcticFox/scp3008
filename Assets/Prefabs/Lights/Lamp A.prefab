@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2997369977931755952}
   - component: {fileID: 1043774449114547578}
   - component: {fileID: 7803950339962325519}
+  - component: {fileID: 5470893949241586914}
   m_Layer: 3
   m_Name: Lamp A
   m_TagString: Untagged
@@ -99,6 +100,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3738634340896407575, guid: 8b95d51200a9bf1429a24badcb206bb6, type: 3}
+--- !u!208 &5470893949241586914
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548331333228799151}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.004, y: 0.004, z: 0.008}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.001}
+  m_TimeToStationary: 0.5
 --- !u!1 &6149559248139744583
 GameObject:
   m_ObjectHideFlags: 0

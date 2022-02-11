@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5902331187728412307}
   - component: {fileID: 8506663871649552985}
   - component: {fileID: 7047051605974222555}
+  - component: {fileID: 3167542663025911682}
   m_Layer: 3
   m_Name: Books A
   m_TagString: Untagged
@@ -99,3 +100,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3314015816849088215, guid: 02dd06e932b543842a250d3723d268d3, type: 3}
+--- !u!208 &3167542663025911682
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7858009254831963020}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.003, y: 0.001, z: 0.001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

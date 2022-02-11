@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 798128981718727139}
   - component: {fileID: 3240183102812261673}
   - component: {fileID: 1963429014272447288}
+  - component: {fileID: -3971373655868216831}
   m_Layer: 3
   m_Name: Sofa C
   m_TagString: Untagged
@@ -96,3 +97,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4173625573599780822, guid: 58923def556dd354fa5eba8452de13d7, type: 3}
+--- !u!208 &-3971373655868216831
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032847217172065532}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.006, y: 0.004, z: 0.003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.001, z: 0}
+  m_TimeToStationary: 0.5

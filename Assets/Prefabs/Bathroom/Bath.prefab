@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6288794269319112881}
   - component: {fileID: 8116258765291379835}
   - component: {fileID: 3717613056720598077}
+  - component: {fileID: -5669681934660412715}
   m_Layer: 3
   m_Name: Bath
   m_TagString: Untagged
@@ -98,3 +99,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7983645675987656659, guid: 3a20d03934691b8448f34f7a79b58ce6, type: 3}
+--- !u!208 &-5669681934660412715
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7755834249277111726}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.007, y: 0.004, z: 0.004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.0050000004, y: 0, z: -0.002}
+  m_TimeToStationary: 0.5

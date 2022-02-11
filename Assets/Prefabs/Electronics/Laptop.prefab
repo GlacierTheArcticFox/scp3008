@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1804181892135528239}
   - component: {fileID: 4534362411645195237}
   - component: {fileID: 2758002944860483189}
+  - component: {fileID: -4555623095422210781}
   m_Layer: 3
   m_Name: Laptop
   m_TagString: Untagged
@@ -98,3 +99,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1912213703759168438, guid: 6415d7d012d188a45ab3524040fbf3dc, type: 3}
+--- !u!208 &-4555623095422210781
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2733041651773698608}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.002, y: 0.002, z: 0.002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.001}
+  m_TimeToStationary: 0.5
