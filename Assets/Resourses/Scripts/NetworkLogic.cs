@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UNET;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class NetworkLogic : NetworkBehaviour {
@@ -10,18 +11,19 @@ public class NetworkLogic : NetworkBehaviour {
     public GameObject world;
     public GameObject movedObjects;
     public GameObject networkManager;
+    public GameObject ipField;
 
     public int worldSeed;
     string connectAddress = "127.0.0.1";
 
     //public NetworkVariable<int> worldSeed = new NetworkVariable<int>();
-    
-    public void SetIp(string ip) {
-        connectAddress = ip;
-    }
 
     public void StartClient() {
-        NetworkManager.Singleton.GetComponent<UNetTransport>().ConnectAddress = connectAddress;
+        if (ipField.GetComponent<InputField>().text != "") {
+            NetworkManager.Singleton.GetComponent<UNetTransport>().ConnectAddress = ipField.GetComponent<InputField>().text;
+        } else {
+            NetworkManager.Singleton.GetComponent<UNetTransport>().ConnectAddress = "127.0.0.1";
+        }
         NetworkManager.Singleton.StartClient();
     }
 

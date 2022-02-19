@@ -37,6 +37,7 @@ public class Player : NetworkBehaviour {
 
     public override void OnNetworkSpawn() {
         if (IsOwner) {
+            gameObject.transform.position = new Vector3(4, 0.75f, 4);
             playerModel.SetActive(false);
             gameObject.name = "LocalPlayer";
         } else {

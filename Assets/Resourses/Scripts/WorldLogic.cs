@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.HighDefinition;
 using UnityEngine.AI;
 using UnityEngine;
 using Unity.Netcode;
@@ -47,8 +46,8 @@ public class WorldLogic : NetworkBehaviour {
         //timer = dayTime;
         //LightsOn();
         //worldLight.SetActive(true);
-        profile.TryGet<HDRISky>(out var sky);
-        sky.exposure.value = 15;
+        //profile.TryGet<HDRISky>(out var sky);
+        //sky.exposure.value = 15;
     }
 
     void Update() {
