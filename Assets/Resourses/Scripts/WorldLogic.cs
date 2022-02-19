@@ -19,6 +19,10 @@ public class WorldLogic : NetworkBehaviour {
     public GameObject camera;
     public int maxDistance = 10;
 
+    public GameObject audio;
+    public AudioClip[] songs;
+    int songIndex = 0;
+
     public GameObject musicPlayer;
     public GameObject lightsPlayer;
 
@@ -42,6 +46,7 @@ public class WorldLogic : NetworkBehaviour {
 
     private int objctCounter = 0;
 
+
     void Start() {
         //timer = dayTime;
         //LightsOn();
@@ -51,6 +56,15 @@ public class WorldLogic : NetworkBehaviour {
     }
 
     void Update() {
+        if (songIndex >= songs.Length) {
+            songIndex = 0;
+        }
+
+        if(!audio.GetComponent<AudioSource>().isPlaying && audio.GetComponent<AudioSource>().enabled){
+            audio.GetComponent<AudioSource>().clip = songs[songIndex];
+            audio.GetComponent<AudioSource>().Play();
+            songIndex++;
+        }
         /*
         timer -= Time.deltaTime;
         if(timer < 0) {
@@ -89,10 +103,10 @@ public class WorldLogic : NetworkBehaviour {
         walls[2].SetActive(true);
         walls[3].SetActive(true);
 
-        walls[0].transform.position = new Vector3(((((worldSize/2)*10)*8)), 50, 0);
-        walls[1].transform.position = new Vector3(-((((worldSize/2)*10)*8)+8), 50, 0);
-        walls[2].transform.position = new Vector3(0, 50, ((((worldSize/2)*10)*8)));
-        walls[3].transform.position = new Vector3(0, 50, -((((worldSize/2)*10)*8)+8));
+        walls[0].transform.position = new Vector3(((((worldSize/2)*10)*8)), 500, 0);
+        walls[1].transform.position = new Vector3(-((((worldSize/2)*10)*8)+8), 500, 0);
+        walls[2].transform.position = new Vector3(0, 500, ((((worldSize/2)*10)*8)));
+        walls[3].transform.position = new Vector3(0, 500, -((((worldSize/2)*10)*8)+8));
     }
 
     void GenGroup(int xpos, int ypos) {
