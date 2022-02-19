@@ -3197,7 +3197,6 @@ MonoBehaviour:
   maxDistance: 120
   audio: {fileID: 1388062113}
   songs:
-  - {fileID: 8300000, guid: 1d3888b6b1610634bbd00130a21a04bc, type: 3}
   - {fileID: 8300000, guid: 89145d3cea825b641a7b07da80dae291, type: 3}
   - {fileID: 8300000, guid: 1259f470524955740b10781147a79d40, type: 3}
   - {fileID: 8300000, guid: 5d91b9e33ae5add4885e3103f1bd839c, type: 3}
