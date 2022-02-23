@@ -8,14 +8,17 @@ public class PlayerHead : MonoBehaviour {
     
     public float mouseSensitivity = 100f;
     public Transform playerBody;
+    public GameObject UIManager;
 
     float xRotation = 0f;
 
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
+        UIManager = GameObject.Find("Canvas");
     }
 
     void Update() {
+        mouseSensitivity = UIManager.GetComponent<UIManager>().mouseSensitivity;
         if (Cursor.lockState != CursorLockMode.None) {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
@@ -25,14 +28,6 @@ public class PlayerHead : MonoBehaviour {
 
             transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
             playerBody.Rotate(Vector3.up * mouseX);
-        }
-
-        if (Input.GetButton("Cancel")){
-            if (Cursor.lockState != CursorLockMode.None){
-                Cursor.lockState = CursorLockMode.None;
-            } else {
-                Cursor.lockState = CursorLockMode.Locked;
-            }
         }
     }
     

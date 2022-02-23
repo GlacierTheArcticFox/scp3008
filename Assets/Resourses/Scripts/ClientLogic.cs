@@ -19,21 +19,6 @@ public class ClientLogic : NetworkBehaviour {
 
     //public NetworkVariable<int> worldSeed = new NetworkVariable<int>();
 
-    public override void OnNetworkSpawn() {
-        /*if (IsHost) {
-            worldSeed.Value = Random.seed;
-        }
-
-        if (IsOwner) {
-            world = GameObject.Find("/World");
-            Random.seed = worldSeed.Value;
-            playerModel.SetActive(false);
-            world.GetComponent<WorldLogic>().GenWorld();
-        } else {
-            camera.SetActive(false);
-        }*/
-    }
-
     void Update() {
         if (!IsOwner) {return;}
 
@@ -79,13 +64,13 @@ public class ClientLogic : NetworkBehaviour {
                 if(hit.collider.tag == "Parent"){
                     hit.collider.gameObject.transform.parent.position = point.transform.position;
                     hit.collider.gameObject.transform.parent.Rotate(rot);
-                    GameObject.Find("NetworkLogic").GetComponent<NetworkLogic>().MoveObjectServerRpc(hit.collider.gameObject.transform.parent.gameObject.name, hit.collider.gameObject.transform.parent.position, hit.collider.gameObject.transform.parent.rotation);
+                    GameObject.Find("NetworkLogic").GetComponent<NetworkLogic>().MoveObjectServerRpc(int.Parse(hit.collider.gameObject.transform.parent.gameObject.name), hit.collider.gameObject.transform.parent.position, hit.collider.gameObject.transform.parent.rotation);
                     //hit.collider.gameObject.transform.parent.Rotate(rot);
                     //hit.collider.gameObject.transform.parent.parent = GameObject.Find("MovedObjects").transform;
                 } else {
                     hit.collider.gameObject.transform.position = point.transform.position;
                     hit.collider.gameObject.transform.Rotate(rot);
-                    GameObject.Find("NetworkLogic").GetComponent<NetworkLogic>().MoveObjectServerRpc(hit.collider.gameObject.name, hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
+                    GameObject.Find("NetworkLogic").GetComponent<NetworkLogic>().MoveObjectServerRpc(int.Parse(hit.collider.gameObject.name), hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
                     //MoveObjectServerRpc(hit.collider.gameObject.GetInstanceID() ,point.transform.position);
                     //hit.collider.gameObject.transform.Rotate(rot);
                     //hit.collider.gameObject.transform.parent = GameObject.Find("MovedObjects").transform;

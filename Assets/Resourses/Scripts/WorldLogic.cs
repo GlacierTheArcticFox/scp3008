@@ -12,6 +12,8 @@ public class WorldLogic : NetworkBehaviour {
     public GameObject[] walls;
     public GameObject pillar;
 
+    public GameObject reflector;
+
     public int worldSize = 10;
     public float dayTime = 120f;
 
@@ -21,7 +23,7 @@ public class WorldLogic : NetworkBehaviour {
 
     public GameObject audio;
     public AudioClip[] songs;
-    int songIndex = 0;
+    public int songIndex = -1;
 
     public GameObject musicPlayer;
     public GameObject lightsPlayer;
@@ -57,13 +59,14 @@ public class WorldLogic : NetworkBehaviour {
 
     void Update() {
         if (songIndex >= songs.Length) {
-            songIndex = 0;
+            songIndex = -1;
         }
 
         if(!audio.GetComponent<AudioSource>().isPlaying && audio.GetComponent<AudioSource>().enabled){
-            audio.GetComponent<AudioSource>().clip = songs[songIndex];
-            audio.GetComponent<AudioSource>().Play();
             songIndex++;
+            audio.GetComponent<AudioSource>().clip = songs[songIndex];
+            audio.GetComponent<AudioSource>().time = 0;
+            audio.GetComponent<AudioSource>().Play();
         }
         /*
         timer -= Time.deltaTime;
@@ -114,6 +117,9 @@ public class WorldLogic : NetworkBehaviour {
         newGroup.name = "Group ("+xpos+", "+ypos+")";
         newGroup.transform.parent = transform;
         newGroup.transform.position = new Vector3(((xpos*10)*8)+36, 0, ((ypos*10)*8)+36);
+
+        //GameObject newReflector = Instantiate(reflector);
+        //newReflector.transform.parent = newGroup.transform;
 
         for (int x = 0; x < 10; x++) {
             for (int y = 0; y < 10; y++) {
