@@ -12,7 +12,7 @@ public class ClientLogic : NetworkBehaviour {
     public GameObject point;
 
     RaycastHit hit;
-    bool isHit;
+    public bool isHit;
 
     int rotMode = 2;
     Vector3 rot;
